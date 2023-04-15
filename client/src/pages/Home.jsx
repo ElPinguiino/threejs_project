@@ -21,17 +21,22 @@ const Home = () => {
       {snap.intro && (
         <motion.section className="home" {...slideAnimation('left')}>
           <motion.header {...slideAnimation("down")}>
+            <img 
+              src='./bug.svg'
+              alt="logo"
+              className="w-8 h-8 object-contain"
+            />
           </motion.header>
           <motion.div className="home-content" {...headContainerAnimation}>
             <motion.div {...headTextAnimation}>
               <h1 className="head-text">
-                T-SHIRT <br className="xl:block hidden" /> CUSTOMIZER.
+                CUSTOM <br className="xl:block hidden" /> T-SHIRT
               </h1>
             </motion.div>
             <motion.div className="flex flex-col gap-5" {...headContentAnimation}>
               <p className="max-w-md font-normal text-gray-600 text-base">
-                Create your unique and exclusive shirt with this brand new 3D customization tool. <strong>Unleash your imagination </strong>{""} 
-                and define your own style.
+                Create your unique t-shirt with this 3D customization tool that implements. <strong>DALL-E by OpenAI </strong>{""} 
+                to create a logo for you if desired.
               </p>
               <CustomButton 
                 type="filled"
